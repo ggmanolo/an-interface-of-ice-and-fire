@@ -18,7 +18,7 @@ const Home = async () => {
   const houses: House[] = await fetchHouses()
 
   return (
-    <main className="px-10 py-12">
+    <main className="px-6 md:px-8 py-12">
       <h1 className="text-6xl md:text-7xl uppercase text-center font-bold text-balance">
         An interface of Ice & Fire
       </h1>
