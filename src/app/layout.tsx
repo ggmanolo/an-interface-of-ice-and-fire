@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import { Libre_Baskerville, Montserrat } from "next/font/google"
+import { Karla, Montserrat } from "next/font/google"
 import "./globals.css"
 
 const bodyFont = Montserrat({ weight: "variable", subsets: ["latin"] })
-const titleFont = Libre_Baskerville({ weight: "400", subsets: ["latin"] })
+const titleFont = Karla({ weight: "variable", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "An interface of Ice & Fire",

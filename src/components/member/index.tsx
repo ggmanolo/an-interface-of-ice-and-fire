@@ -20,9 +20,9 @@ const Member = async ({ url }: MemberProps) => {
   const isDead = member.died !== ""
 
   return (
-    <div className="border border-neutral-300 p-4 h-64 rounded-md">
-      <h4 className="font-semibold uppercase">{member.name}</h4>
-      <p>Status: {isDead ? "Dead" : "Alive"}</p>
+    <div className="border-2 border-neutral-700 dark:border-neutral-300 p-4 h-64 rounded-md">
+      <h4 className="font-bold uppercase text-xl">{member.name}</h4>
+      <p className="mt-4 font-semibold">[ {isDead ? "Dead" : "Alive"} ]</p>
       {isDead && <p>{member.died}</p>}
     </div>
   )
