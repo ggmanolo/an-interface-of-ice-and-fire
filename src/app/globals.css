@@ -17,16 +17,10 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-geist-sans);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-geist-mono);
+h1 {
+  font-family: var(--font-title);
 }
 
 @layer utilities {

@@ -1,17 +1,9 @@
 import type { Metadata } from "next"
-import localFont from "next/font/local"
+import { Libre_Baskerville, Montserrat } from "next/font/google"
 import "./globals.css"
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-})
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-})
+const bodyFont = Montserrat({ weight: "variable", subsets: ["latin"] })
+const titleFont = Libre_Baskerville({ weight: "400", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "An interface of Ice & Fire",
@@ -24,12 +16,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html
+      lang="en"
+      style={
+        {
+          "--font-title": titleFont.style.fontFamily,
+          "--font-body": bodyFont.style.fontFamily,
+        } as React.CSSProperties
+      }
+    >
+      <body className={`${bodyFont.className}  antialiased`}>{children}</body>
     </html>
   )
 }

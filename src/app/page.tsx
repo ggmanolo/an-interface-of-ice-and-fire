@@ -19,7 +19,9 @@ const Home = async () => {
 
   return (
     <main className="px-10 py-12">
-      <h1 className="text-5xl">An interface of Ice & Fire</h1>
+      <h1 className="text-5xl uppercase text-center">
+        An interface of Ice & Fire
+      </h1>
 
       <ul className="flex flex-col gap-6 mt-8">
         {houses.map((house, index) => (
