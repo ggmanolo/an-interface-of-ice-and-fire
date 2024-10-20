@@ -8,7 +8,7 @@ interface HouseProps {
 
 const House = ({ name, region, swornMembers }: HouseProps) => {
   return (
-    <div className="border border-stone-200 dark:border-stone-900">
+    <div className="border border-stone-200 dark:border-stone-900  bg-radial-gradient from-stone-200/25 dark:from-stone-900/25 to-transparent">
       <div className="p-6 flex md:items-baseline gap-2 flex-col md:flex-row">
         <h2 className="text-3xl font-bold">{name}</h2>
         <p className="text-stone-500 dark:text-stone-400 font-medium">

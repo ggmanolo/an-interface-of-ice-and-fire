@@ -38,4 +38,8 @@ h6 {
   .to-accent {
     --tw-gradient-to: var(--accent);
   }
+
+  .bg-radial-gradient {
+    background-image: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }

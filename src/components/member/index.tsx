@@ -20,7 +20,7 @@ const Member = async ({ url }: MemberProps) => {
   const isDead = member.died !== ""
 
   return (
-    <div className="border border-stone-200 bg-gradient-to-br from-transparent dark:border-stone-800 to-stone-100/50 dark:to-stone-900/50 p-4 h-64 rounded-lg group cursor-pointer relative flex items-center justify-center overflow-hidden">
+    <div className="border border-stone-200 bg-gradient-to-br from-transparent dark:border-stone-800 to-stone-100/35 dark:to-stone-900/35 p-4 h-64 rounded-lg group cursor-pointer relative flex items-center justify-center overflow-hidden">
       <h4
         className={`${
           isDead && "group-hover:line-through"
