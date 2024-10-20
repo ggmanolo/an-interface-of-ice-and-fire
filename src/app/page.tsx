@@ -18,12 +18,15 @@ const Home = async () => {
   const houses: House[] = await fetchHouses()
 
   return (
-    <main className="px-6 md:px-8 py-12">
-      <h1 className="text-6xl md:text-7xl uppercase text-center font-bold text-balance">
+    <main className="px-6 md:px-8 py-20 max-w-[1080px]">
+      <h1 className="text-5xl text-center font-bold text-balance mt-20">
         An interface of Ice & Fire
       </h1>
+      <p className="text-center text-xl mt-4 text-stone-500 dark:text-stone-400 font-medium">
+        A frontend challenge by Manuel Garcia Genta
+      </p>
 
-      <ul className="flex flex-col gap-10 mt-20">
+      <ul className="flex flex-col gap-20 mt-40">
         {houses.map((house, index) => (
           <li key={index}>
             <House

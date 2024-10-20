@@ -25,7 +25,11 @@ export default function RootLayout({
         } as React.CSSProperties
       }
     >
-      <body className={`${bodyFont.className}  antialiased`}>{children}</body>
+      <body
+        className={`${bodyFont.className}  antialiased flex flex-col items-center`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

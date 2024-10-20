@@ -10,8 +10,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #141d26;
-    --foreground: #e2e2d2;
+    --background: #000;
+    --foreground: #fff;
     --accent: #c51f5d;
   }
 }
@@ -19,10 +19,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-}
-
-h1 {
-  color: var(--accent);
 }
 
 h1,
