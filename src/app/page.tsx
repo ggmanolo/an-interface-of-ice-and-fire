@@ -23,7 +23,7 @@ const Home = async () => {
       <h1 className="text-5xl text-center font-bold text-balance mt-20">
         An interface of Ice & Fire
       </h1>
-      <p className="text-center text-xl mt-4 text-stone-500 dark:text-stone-400 font-medium">
+      <p className="text-center text-xl mt-4 text-stone-500 dark:text-stone-400 font-medium text-balance">
         A frontend challenge by{" "}
         <Link
           href="https://ggmanolo.com"
