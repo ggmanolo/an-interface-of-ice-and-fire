@@ -34,4 +34,8 @@ h6 {
   .text-balance {
     text-wrap: balance;
   }
+
+  .to-accent {
+    --tw-gradient-to: var(--accent);
+  }
 }

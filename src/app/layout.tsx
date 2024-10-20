@@ -26,8 +26,9 @@ export default function RootLayout({
       }
     >
       <body
-        className={`${bodyFont.className}  antialiased flex flex-col items-center`}
+        className={`${bodyFont.className}  antialiased flex flex-col items-center relative`}
       >
+        <div className="absolute top-0 left-0 h-40 w-screen bg-gradient-to-t from-transparent to-accent opacity-20 -z-10" />
         {children}
       </body>
     </html>
