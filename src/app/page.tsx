@@ -1,4 +1,5 @@
 import House from "@/components/house"
+import Link from "next/link"
 
 interface House {
   name: string
@@ -23,7 +24,15 @@ const Home = async () => {
         An interface of Ice & Fire
       </h1>
       <p className="text-center text-xl mt-4 text-stone-500 dark:text-stone-400 font-medium">
-        A frontend challenge by Manuel Garcia Genta
+        A frontend challenge by{" "}
+        <Link
+          href="https://ggmanolo.com"
+          className="underline hover:opacity-70 transition-opacity"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Manuel Garcia Genta
+        </Link>
       </p>
 
       <ul className="flex flex-col gap-20 mt-40">
